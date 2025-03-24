@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane nodeOrientation="LEFT_TO_RIGHT" prefHeight="448.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.formulariocontato.HelloController">
+   <children>
+      <Label layoutX="4.0" prefHeight="45.0" prefWidth="526.0" text="Formulário de Contato" wrapText="true">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <padding>
+            <Insets left="8.0" />
+         </padding>
+      </Label>
+      <Label layoutX="14.0" layoutY="67.0" prefHeight="17.0" prefWidth="567.0" text="Deixe-nos saber suas perguntas, sugestões ou dúvidas, preenchendo o formulário de contato abaixo." />
+      <Line endX="517.0" endY="7.62939453125E-6" layoutX="125.0" layoutY="84.0" startX="-125.0" startY="7.62939453125E-6" />
+      <VBox layoutX="31.0" layoutY="123.0" prefHeight="311.0" prefWidth="581.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="635.0" spacing="15.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="67.0" text="Nome*" />
+                  <TextField fx:id="nome" prefHeight="26.0" prefWidth="255.0" promptText="Primeiro Nome">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></TextField>
+                  <TextField fx:id="sobreNome" layoutX="58.0" layoutY="20.0" prefHeight="26.0" prefWidth="255.0" promptText="Último Nome" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="5.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="635.0" spacing="15.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="47.0" text="E-mail*" />
+                  <TextField fx:id="email" prefHeight="26.0" prefWidth="255.0" promptText="nome@exemplo.com.br">
+                     <HBox.margin>
+                        <Insets left="23.0" />
+                     </HBox.margin></TextField>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="5.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="56.0" prefHeight="26.0" prefWidth="635.0" spacing="15.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="57.0" text="Telefone*" />
+                  <TextField fx:id="telefone" prefHeight="26.0" prefWidth="255.0" promptText="## ####-####">
+                     <HBox.margin>
+                        <Insets left="13.0" />
+                     </HBox.margin></TextField>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="5.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="103.0" prefHeight="26.0" prefWidth="635.0" spacing="15.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="56.0" text="Assunto*" />
+                  <TextField fx:id="assunto" alignment="CENTER" prefHeight="26.0" prefWidth="255.0">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin></TextField>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="5.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="149.0" prefHeight="87.0" prefWidth="582.0" spacing="15.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="72.0" text="Mensagem*" />
+                  <TextArea fx:id="mensagem" prefHeight="66.0" prefWidth="488.0" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="5.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleForm" prefHeight="26.0" prefWidth="190.0" style="-fx-background-color: black;" text="Enviar Formulário de Contato" textFill="WHITE" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>
